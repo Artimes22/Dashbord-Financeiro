@@ -17,8 +17,14 @@ import pandas as pd
 
 # ========= Layout ========= #
 layout = dbc.Col([
-                
-            ])
+            html.h1("myBudget", className="text-primary"),
+            html.p("By ASIMOV", className="text-info"),
+            html.hr()
+#--------sessão de perfil--------#
+            dbc.Button(id='botao_avatar',
+               children=[html.img(src='/assents/img_hom.png', id='avatar_change', alt='Avatar', className='perfil_name')
+                         ])                 
+])
 
 
 

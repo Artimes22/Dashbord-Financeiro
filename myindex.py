@@ -21,7 +21,7 @@ app.layout = dbc.Container(children=[
         ], md=2, style={'background-color': 'red', 'height': '100vh'}),
     dbc.Col([
         content
-    ], md=10)
+    ], md=10, style={'backgroud-color': 'blue', 'height': '100vh'})
 ])
 ]
 , fluid=True,)
@@ -35,4 +35,5 @@ def render_page(pathname):
 
 
 if __name__ == '__main__':
-    app.run_server(port=8051, debug=True)
+    app.rum_server(port=5500, debug=True)
+
